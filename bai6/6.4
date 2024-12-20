@@ -1,0 +1,29 @@
+class ReverseString:
+
+def init (self, text):
+
+self.text = text
+
+def reverse_words (self):
+
+>>
+
+words = self.text.split()
+
+reversed_words = words[::-1]
+
+>>
+
+return '.join(reversed_words)
+
+>>
+
+if name == main ":
+
+input_string = input ("Nhập chuỗi cần đảo ngược: ")
+
+reverser = ReverseString(input_string)
+
+reversed string = reverser.reverse_words()
+
+print("Chuỗi sau khi đảo ngược:", reversed_string)
