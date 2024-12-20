@@ -1,0 +1,14 @@
+def check_divisible_by_5 (binary_numbers):
+divisible_numbers = []
+
+for binary in binary_numbers.split(','):
+binary binary.strip()
+if len (binary) == 4 and all (bit in '01' for bit in binary):
+decimal int (binary, 2)
+if decimal % 5 == 0:
+divisible_numbers.append(binary)
+   return ', '.join(divisible_numbers)
+
+input binary input ("Nhập chuỗi các số nhị phân 4 chữ số (phân tách bằng dấu ph
+result = check_divisible_by_5(input_binary)
+print("Các số nhị phân chia hết cho 5 là:", result)
