@@ -1,0 +1,19 @@
+def is_all_digits_even (number):
+"""Kiểm tra xem tất cả các chữ số của số có phải là số chẵn không."""
+return all (int(digit) % 2 == 0 for digit in str(number))
+
+def find even digit_numbers(start, end):
+"""Tìm tất cả các số có chữ số chẵn trong khoảng từ start đến end."""
+even_digit_numbers = []
+
+for number in range (start, end + 1):
+if is_all_digits_even (number):
+even_digit_numbers.append(str(number))
+
+return ', '.join(even_digit_numbers)
+
+start = 1000
+end = 3000
+
+result = find_even_digit_numbers (start, end)
+print("Các số có chữ số chẵn trong khoảng từ 1000 đến 3000 là:", result)
