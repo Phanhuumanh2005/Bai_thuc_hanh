@@ -1,0 +1,41 @@
+import math # Thư viện math để sử dụng giá trị của Pi
+
+class Circle:
+
+def init (self, radius):
+
+self.radius = radius # Khởi tạo bán kính của hình tròn
+
+>>>
+
+def area (self):
+
+# Tính diện tích của hình tròn: A = π *r^2
+
+return math.pi * self.radius ** 2
+
+>>>
+
+def circumference (self):
+
+# Tính chu vi của hình tròn: C = 2 * *
+
+return 2* math.pi * self.radius
+
+# Chương trình chính
+
+if name == main ":
+
+# Nhập bán kính từ bàn phím
+
+radius = float(input("Nhập bán kính của hình tròn: "))
+
+# Khởi tạo đối tượng Circle với bán kính đã nhập
+
+circle Circle (radius)
+
+# In ra diện tích và chu vi của hình tròn
+
+print (f"Diện tích của hình tròn: {circle.area():.2f}")
+
+print (f"Chu vi của hình tròn: {circle.circumference():.2f}")
